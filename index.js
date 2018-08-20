@@ -36,5 +36,5 @@ function findTheCheese (foods) {
     if (cheeseIndex < 0 ) {
     return `no cheese!`
   } if (cheeseIndex >= 0 )
-  return `I have found ${foods[cheeseIndex] in position ${cheeseIndex} in the list}` // foods[foods.findIndex(cheeseTest)]
+  return `${foods[cheeseIndex]}` // foods[foods.findIndex(cheeseTest)]
 }
