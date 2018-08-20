@@ -15,11 +15,15 @@ function summonCaptainPlanet(planeteerCalls){
 }
 
 function longPlaneteerCalls(words) {
-  for (let i = 0; i < words.length; i++){
+  let longCounter = 0                       // Counter to keep register long words
+  for (let i = 0; i < words.length; i++){   // Loop through the elements, check if a word is longer than 4 char, add 1 to the counter
     if (words[i].length > 4){
-      return true
-    } else return false
+      longCounter++
+    }
   }
+  if (longCounter > 0){                   // End of loop, check if counter has registered any long words
+    return true
+  } else return false
 }
 
 
