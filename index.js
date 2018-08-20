@@ -1,7 +1,7 @@
 function dwarfRollCall(dwarves) {
   let numberedDwarves = []
   for (let i=0; i < dwarves.length; i++){
-    numberedDwarves.push(`${i+1}. ${dwarves[i]} `) //
+    numberedDwarves.push(`${i+1}. ${dwarves[i]} `)
   }
   return numberedDwarves.join(``)
 }
@@ -32,9 +32,9 @@ function findTheCheese (foods) {
   function cheeseTest(x){                                                       // Testing (callback) function to be used by the findIndex method
     return x === `cheddar` || x === `gouda` || x === `camembert`
   }
-    let cheeseIndex = foods.findIndex(cheeseTest)
+    let cheeseIndex = foods.findIndex(cheeseTest) // which will return the position of the cheese
     if (cheeseIndex < 0 ) {
     return `no cheese!`
   } if (cheeseIndex >= 0 )
-  return `${foods[cheeseIndex]}` // foods[foods.findIndex(cheeseTest)]
+  return `I have found ${foods[cheeseIndex] in position ${cheeseIndex} in the list}` // foods[foods.findIndex(cheeseTest)]
 }
