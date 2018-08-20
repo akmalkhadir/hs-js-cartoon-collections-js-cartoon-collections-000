@@ -1,7 +1,7 @@
 function dwarfRollCall(dwarves) {
   let numberedDwarves = []
   for (let i=0; i < dwarves.length; i++){
-    numberedDwarves.push(`${i+1}. ${dwarves[i]} `)
+    numberedDwarves.push(`${i+1}. ${dwarves[i]} `) //1. name
   }
   return numberedDwarves.join(``)
 }
@@ -29,10 +29,10 @@ function longPlaneteerCalls(words) {
 
 
 function findTheCheese (foods) {
-  function cheeseTest(food){
-    return food === `cheddar` || food === `gouda` || food === `camembert`
+  function cheeseTest(x){                                                       // Testing (callback) function to be used by the findIndex method
+    return x === `cheddar` || x === `gouda` || x === `camembert`
   }
-  if (foods.findIndex(cheeseTest) < 0 ){
+    if (foods.findIndex(cheeseTest) < 0 ) {
     return `no cheese!`
   } if (foods.findIndex(cheeseTest) >= 0 )
   return `${foods[foods.findIndex(cheeseTest)]}`
