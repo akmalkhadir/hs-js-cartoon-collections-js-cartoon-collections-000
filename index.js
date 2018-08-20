@@ -30,7 +30,7 @@ function longPlaneteerCalls(words) {
 function findTheCheese (foods) {
   function cheeseTest(x){                                           // Testing (callback) function to be used by the findIndex method
     return x === `cheddar` || x === `gouda` || x === `camembert`
-    }
+  }
   let cheeseIndex = foods.findIndex(cheeseTest)                    // Will return the position of the cheese, -1 if no cheese found
   if (cheeseIndex < 0 ) {
     return `no cheese!`
